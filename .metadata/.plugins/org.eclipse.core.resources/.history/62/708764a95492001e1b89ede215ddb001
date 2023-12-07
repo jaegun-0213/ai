@@ -1,0 +1,57 @@
+package javaBASIC.ch01.sec12;
+
+import java.nio.channels.AcceptPendingException;
+
+import javax.security.auth.login.AccountException;
+import javax.sound.midi.SysexMessage;
+
+public class Calculator {
+
+	public static void main(String[] args) {
+		//5명 아르바이생 급여 계산하는 프로그램 작성하기 
+		// 1명일 경우 급여 계산하기
+		//형식 변수형태 변수명 = 값;
+		String name;
+		name=" 홍길동";
+		
+		int basicpay=50000; //급여
+		String phoneNumber = "010-1234-4567"; //전화번호
+		String accountNumber = "국민 123-12-1234"; //계좌번호
+		String dept="알바생"; //직급
+		boolean sex = true; // 성별 남자
+		double tex = 0.03; //세금 비율
+		
+		//출력하기
+		System.out.println("1번 알바 정보 :" + name + "   " + basicpay + " " + phoneNumber );
+		System.out.println(accountNumber + "  " + dept + "  " + sex + "  " + tex );
+		
+		String name2;
+		name2=" 이순신";
+		
+		int basicpay2=50000;
+		String phoneNumber2 = "010-234-4567";
+		String accountNumber2 = "국민 321-32-4321";
+		String dept2="정직원";
+		boolean sex2 = true; //남자
+		double tex2 = 0.02; //세금 비율
+		
+		//출력하기
+		System.out.println("2번 알바 정보 :" + name2 + "   " + basicpay2 + " " + phoneNumber2 );
+		System.out.println(accountNumber2 + "  " + dept2 + "  " + sex2 + "  " + tex2 );
+		
+		String name3;
+		name3=" 이경미";
+				
+		int basicpay3=15000;
+		String phoneNumber3 = "010-987-7456";
+		String accountNmber3 = "신한 123-555-7878";
+		
+		// 실지금핵
+		//1번 10시간 2번 15시간 3번 20 4번 25시간 5번 30시간
+		//1번 10시간 일해서 10 X 50000 세금 50000 X 0.03 실수령핵 = 500000 - 세금
+		
+		//50만원을 변수에 담는다
+		
+		int sum = 10 * basicpay;
+	}
+}

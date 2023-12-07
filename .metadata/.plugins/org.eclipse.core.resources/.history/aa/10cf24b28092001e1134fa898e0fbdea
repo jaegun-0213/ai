@@ -1,0 +1,115 @@
+package javaBASIC.ch01.sec15;
+
+import java.awt.SystemColor;
+
+public class DataTypeEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//자료형 - 기본형(정수형 - byte int double, 실수형 - float, 논리형 - boolean 문자형 - char)
+		
+		//정수처리
+		byte b1 = 127; // -128 ~ 127
+		System.out.print(b1);
+		
+		short s1 = 32767; //-32768 ~ 32767
+		
+		long lol = 90000000000000000l;
+		
+		byte b2 = 10;
+		byte b3 = 20;
+		
+		int b23 = b2 + b3; // + 연산자는  int형으로 처리함 byte형(1) int형(4) byte형(1) =int형임
+		
+		short s2 = -20;
+		short s3 = +20;
+		
+		int resul23 = s2 - s3;
+		
+		byte b4 = 20;
+		short s4 = 30;
+		
+		int sumb4s4 = b4 +b4;
+		
+		
+		float f1 = 3.14f;
+		float f2 = 3.12345678f; //소수점 7자리까지는 출력
+		
+		System.out.print( f1 + "  " + f2);
+		
+		double d1 =3.1234567890123456; //15자리까지
+		System.out.print(d1);
+		
+		//실수형은 float와 - 4바이트 double형 - 8바이트
+		
+		float f3=10.23f;
+		float f4=2.45f;
+		float mulf3f4 = f3 * f4;
+		System.out.print(mulf3f4);
+		
+		double mulf3f4d =f3 * f4;
+		System.out.print(mulf3f4d);
+		
+		double d3=3.14;
+		double d4=12.65;
+		
+		double muld3d4 = d3 * d4;
+		System.out.print(muld3d4);
+		
+		//float muld3d4 = d3 *d4; 에러발생 왜? 작은타입으로 넣어줘서
+		
+		double resulf3f4 = f3 / f4; // flot자료형이 더블형으로 변환됨  형변환 cast연산 자동형 변환
+		
+		int iil=10;
+		short ssl=20;
+		
+		float ffl = iil; // 실수형 = 정수형 형변환 cast연산 자동형 변환
+		
+		//실수형-->정수형  30평 아파트--> 8평원룸 가구를 버려야한다. 데이터손실
+		//형변환 =강제형변환 = down cast연산  큰타임 -> 작은타입으로 바뀜
+		//형식 정수형 변수명 =(정수형타입) 실수형변수
+		
+		double d10 =3.14;
+		int chang10 =(int) d10; //소숫점 .14를 손실했다.
+		System.out.print(d10 + " " + chang10);
+		
+		float f10 = 10.25f;
+		byte changef10 = (byte) f10;
+		
+		int i10 =3000;
+		short chi10 = (short) i10;
+		
+		//정수형 문제로 국어점수 수학점수 영어점수 변수 담으세요.
+		
+		int rnrdj =78;
+		int tngkr = 90;
+		int duddj = 70;
+		
+		//합계구하기
+		int sum = rnrdj+tngkr+duddj;
+		
+		//평균 구하기 실수형으로
+		double tlgja = sum / 3.0; // 253 / 3을 연산하면 정수/정수이브로 정수만 나온다
+		double tlgja1 = (double)sum / 3;
+		
+		//수학정수의 거듭제곱 90**2
+		int matDouble = matDouble*matDouble;
+		
+		//출력하기
+		System.out.print("합계는" + sum);
+		System.out.print("평균은" + tlgja);
+		System.out.print("평균은" + tlgja1);
+		System.out.print("수학점수의 거듭제곱" + matDouble);
+		
+		
+		char ch1 ='a';
+		System.out.print((int) ch1);
+		
+		System.out.print((int) ch1 + 3);
+		System.out.printf("%c", ch1 +3); // "%c"는 문자형으로 ch1+3의 100 유니코드슛자를 문자형으로 출력하기
+		
+		// korea를 출력하기
+		System.out.printf("%c%c%c", 75, 111, 114);
+	}
+
+}

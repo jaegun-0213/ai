@@ -1,0 +1,42 @@
+package javaBASIC.ch01.sec12;
+
+import java.nio.channels.AcceptPendingException;
+
+import javax.security.auth.login.AccountException;
+import javax.sound.midi.SysexMessage;
+
+public class Calculator {
+
+	public static void main(String[] args) {
+		//5명 아르바이생 급여 계산하는 프로그램 작성하기 
+		// 1명일 경우 급여 계산하기
+		//형식 변수형태 변수명 = 값;
+		String name;
+		name=" 홍길동";
+		
+		int basicpay=50000;
+		String phoneNumber = "010-1234-4567";
+		String accountNumber = "국민 123-12-1234";
+		String dept="알바생";
+		boolean sex = true; //남자
+		double tex = 0.03; //세금 비율
+		
+		//출력하기
+		System.out.println("1번 알바 정보 :" + name + "   " + basicpay + " " + phoneNumber );
+		System.out.println(accountNumber + "  " + dept + "  " + sex + "  " + tex );
+		
+		String name;
+		name=" 홍길동";
+		
+		int basicpay=50000;
+		String phoneNumber = "010-1234-4567";
+		String accountNumber = "국민 123-12-1234";
+		String dept="알바생";
+		boolean sex = true; //남자
+		double tex = 0.03; //세금 비율
+		
+		//출력하기
+		System.out.println("1번 알바 정보 :" + name + "   " + basicpay + " " + phoneNumber );
+		System.out.println(accountNumber + "  " + dept + "  " + sex + "  " + tex );
+	}
+}

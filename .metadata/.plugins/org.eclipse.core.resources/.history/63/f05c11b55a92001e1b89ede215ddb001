@@ -1,0 +1,39 @@
+package javaBASIC.ch01.sec15;
+
+public class DataTypeEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//자료형 - 기본형(정수형 - byte int double, 실수형 - float, 논리형 - boolean 문자형 - char)
+		
+		//정수처리
+		byte b1 = 127; // -128 ~ 127
+		System.out.print(b1);
+		
+		short s1 = 32767; //-32768 ~ 32767
+		
+		long lol = 90000000000000000l;
+		
+		byte b2 = 10;
+		byte b3 = 20;
+		
+		int b23 = b2 + b3; // + 연산자는  int형으로 처리함 byte형(1) int형(4) byte형(1) =int형임
+		
+		short s2 = -20;
+		short s3 = +20;
+		
+		int resul23 = s2 - s3;
+		
+		byte b4 = 20;
+		short s4 = 30;
+		
+		int sumb4s4 = b4 +b4;
+		
+		
+		float f1 = 3.14f;
+		float f2 = 3.12345678f; //소수점 7자리까지는 출력
+		
+		System.out.print( f1 + "  " + f2);
+	}
+
+}
