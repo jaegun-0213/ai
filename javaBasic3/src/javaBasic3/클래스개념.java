@@ -1,90 +1,90 @@
 package javaBasic3;
 
-public class Å¬·¡½º°³³ä {
+public class í´ë˜ìŠ¤ê°œë… {
 
 	public static void main(String[] args) {
 	
-		// °´Ã¼ »ı¼ºÇÏÀÚ¸¶ÀÚ ³Ö´Â´Ù.
-		Student st1 = new Student ("230101", "È«±æµ¿","AI", 100, "010-1234-5678");
+		// ë°©ë²•1 ê°ì²´ ìƒì„±í•˜ìë§ˆì ë„£ëŠ”ë‹¤.
+		Student st1 = new Student ("230101", "í™ê¸¸ë™","AI", 100, "010-1234-5678");
 		
-		Teacher t1 = new Teacher ("A32", "Á¤ÇöÈñ", "ÄÄ°ø", 1000000, "ÀüÀÓ", 20);
+		Teacher t1 = new Teacher ("A32", "ì •í˜„í¬", "ì»´ê³µ", 1000000, "ì „ì„", 20);
 
 		
-		// "230101" Ãâ·ÂÇÏ±â
-		System.out.println(st1.getÇĞ¹ø());
+		// "230101" ì¶œë ¥í•˜ê¸°
+		System.out.println(st1.getí•™ë²ˆ());
 		
 		// "AI"
-		System.out.println(st1.getÇĞ°ú());
+		System.out.println(st1.getí•™ê³¼());
 		
-		//"Á¤ÇöÈñ"
-		System.out.println(t1.getÀÌ¸§());
+		//"ì •í˜„í¬"
+		System.out.println(t1.getì´ë¦„());
 		
-		//"ÀüÀÓ"
-		System.out.println(t1.get±¸ºĞ());
+		//"ì „ì„"
+		System.out.println(t1.getêµ¬ë¶„());
 		
 		//100
-		System.out.println(st1.getÁ¡¼ö());
+		System.out.println(st1.getì ìˆ˜());
 		
 		//20
-		System.out.println(t1.get½Ã¼ö());
+		System.out.println(t1.getì‹œìˆ˜());
 		
-		// ÇÊ¿äÇÒ ¶§¸¶´Ù ³Ö±â
-		//ºó °´Ã¼ »ı¼ºÇÏ±â
+		// í•„ìš”í•  ë•Œë§ˆë‹¤ ë„£ê¸°
+		//ë¹ˆ ê°ì²´ ìƒì„±í•˜ê¸°
 		Student st2 = new Student();
 		Teacher tc2 = new Teacher();
 		
-		// °ª ³Ö±â
-		st2.setÇĞ¹ø("2201");
-		st2.setÀÌ¸§("ÀÌ¼ø½Å");
-		st2.setÇĞ°ú("°æ¿µÇĞ°ú");
-		st2.setÁ¡¼ö(85);
-		st2.setÀüÈ­¹øÈ£("100-1234-5678");
+		// ê°’ ë„£ê¸°
+		st2.setí•™ë²ˆ("2201");
+		st2.setì´ë¦„("ì´ìˆœì‹ ");
+		st2.setí•™ê³¼("ê²½ì˜í•™ê³¼");
+		st2.setì ìˆ˜(85);
+		st2.setì „í™”ë²ˆí˜¸("100-1234-5678");
 		
-		tc2.setÄÚµå("B101");
-		tc2.setÀÌ¸§("¹ÚÈñ¿¬");
-		tc2.setÀü°ø("ÇÇ¾Æ³ë");
-		tc2.set±Ş¿©(2000000);
-		tc2.set±¸ºĞ("½Ã°£°­»ç");
-		tc2.set½Ã¼ö(30);
+		tc2.setì½”ë“œ("B101");
+		tc2.setì´ë¦„("ë°•í¬ì—°");
+		tc2.setì „ê³µ("í”¼ì•„ë…¸");
+		tc2.setê¸‰ì—¬(2000000);
+		tc2.setêµ¬ë¶„("ì‹œê°„ê°•ì‚¬");
+		tc2.setì‹œìˆ˜(30);
 		
-		System.out.println(st2.getÇĞ¹ø() + "   " + st2.getÀÌ¸§() + "   " + st2.getÇĞ°ú());
-		System.out.println(tc2.getÀü°ø() + "   " + tc2.getÀÌ¸§() + "   " + tc2.get±¸ºĞ());
-		
-		
+		System.out.println(st2.getí•™ë²ˆ() + "   " + st2.getì´ë¦„() + "   " + st2.getí•™ê³¼());
+		System.out.println(tc2.getì „ê³µ() + "   " + tc2.getì´ë¦„() + "   " + tc2.getêµ¬ë¶„());
 		
 		
 		
-		//ÀÚµ¿Â÷ ÆÇ¸ÅÇöÈ² ¸¸µé±â
 		
-		// »ı¼ºÀÚ·Î °ªÀ» ³Ö±â
-		ÀÚµ¿Â÷ÆÇ¸ÅÇöÈ² car1 = new ÀÚµ¿Â÷ÆÇ¸ÅÇöÈ² ("½ÑÅ¸Æä", 35000000, 15000000, 20000000, 36, 555555);
 		
-		// ºó °´Ã¼¸¦ »ı¼ºÇÏ°í
-		ÀÚµ¿Â÷ÆÇ¸ÅÇöÈ² car2 = new ÀÚµ¿Â÷ÆÇ¸ÅÇöÈ²();
+		//ìë™ì°¨ íŒë§¤í˜„í™© ë§Œë“¤ê¸°
 		
-		// ºó °´Ã¼¿¡ °ªÀ» ³Ö¾îÁÖ±â
-		car2.setÂ÷·®¸í("ÄÚ¶õµµ");
-		car2.setÂ÷·®ÃÑ¾×(24000000);
-		car2.setÀÎµµ±İ(5000000);
-		car2.setÇÒºÎ¿ø±İ(19000000);
-		car2.set»óÈ¯±â°£(24);
-		car2.set¿ù³³ÀÔ±İ(791666);
+		// ìƒì„±ìë¡œ ê°’ì„ ë„£ê¸°
+		ìë™ì°¨íŒë§¤í˜„í™© car1 = new ìë™ì°¨íŒë§¤í˜„í™© ("ì‹¼íƒ€í˜", 35000000, 15000000, 20000000, 36, 555555);
 		
-		System.out.println();
+		// ë¹ˆ ê°ì²´ë¥¼ ìƒì„±í•˜ê³ 
+		ìë™ì°¨íŒë§¤í˜„í™© car2 = new ìë™ì°¨íŒë§¤í˜„í™©();
 		
-		//Ãâ·ÂÇÏ±â
-		System.out.println(car1.getÂ÷·®¸í() + "  " + car1.getÂ÷·®ÃÑ¾×() + "   " + car1.getÀÎµµ±İ() +  "   " + car1.getÇÒºÎ¿ø±İ() + "   " + car1.get»óÈ¯±â°£() + "   " + car1.get¿ù³³ÀÔ±İ());
-		System.out.println(car2.getÂ÷·®¸í() + "  " + car2.getÂ÷·®ÃÑ¾×() + "   " + car2.getÀÎµµ±İ() +  "   " + car2.getÇÒºÎ¿ø±İ() + "   " + car2.get»óÈ¯±â°£() + "   " + car2.get¿ù³³ÀÔ±İ());
+		// ë¹ˆ ê°ì²´ì— ê°’ì„ ë„£ì–´ì£¼ê¸°
+		car2.setì°¨ëŸ‰ëª…("ì½”ë€ë„");
+		car2.setì°¨ëŸ‰ì´ì•¡(24000000);
+		car2.setì¸ë„ê¸ˆ(5000000);
+		car2.setí• ë¶€ì›ê¸ˆ(19000000);
+		car2.setìƒí™˜ê¸°ê°„(24);
+		car2.setì›”ë‚©ì…ê¸ˆ(791666);
 		
 		System.out.println();
 		
-		System.out.println("Â÷·®ÃÑ¾×ÇÕ°è" + (car1.getÂ÷·®ÃÑ¾×() + car2.getÂ÷·®ÃÑ¾×()   )  );
-		System.out.println();
-		System.out.println("¿ù³³ÀÔ±İÀÇ ÃÑ¾×Àº" + (car1.get¿ù³³ÀÔ±İ() + car2.get¿ù³³ÀÔ±İ()   )    );
+		//ì¶œë ¥í•˜ê¸°
+		System.out.println(car1.getì°¨ëŸ‰ëª…() + "  " + car1.getì°¨ëŸ‰ì´ì•¡() + "   " + car1.getì¸ë„ê¸ˆ() +  "   " + car1.getí• ë¶€ì›ê¸ˆ() + "   " + car1.getìƒí™˜ê¸°ê°„() + "   " + car1.getì›”ë‚©ì…ê¸ˆ());
+		System.out.println(car2.getì°¨ëŸ‰ëª…() + "  " + car2.getì°¨ëŸ‰ì´ì•¡() + "   " + car2.getì¸ë„ê¸ˆ() +  "   " + car2.getí• ë¶€ì›ê¸ˆ() + "   " + car2.getìƒí™˜ê¸°ê°„() + "   " + car2.getì›”ë‚©ì…ê¸ˆ());
 		
-		//½ÑÅ¸Æä°¡ Â÷¾çÃÑ¾×ÀÌ 4000000À¸·Î ¼öÁ¤ÀÌ µÇ¾ú´Ù¸é
-		car1.setÂ÷·®ÃÑ¾×(40000000);
-		System.out.println(car1.getÂ÷·®¸í() + "  " + car1.getÂ÷·®ÃÑ¾×() + "   " + car1.getÀÎµµ±İ() +  "   " + car1.getÇÒºÎ¿ø±İ() + "   " + car1.get»óÈ¯±â°£() + "   " + car1.get¿ù³³ÀÔ±İ());
+		System.out.println();
+		
+		System.out.println("ì°¨ëŸ‰ì´ì•¡í•©ê³„" + (car1.getì°¨ëŸ‰ì´ì•¡() + car2.getì°¨ëŸ‰ì´ì•¡()   )  );
+		System.out.println();
+		System.out.println("ì›”ë‚©ì…ê¸ˆì˜ ì´ì•¡ì€" + (car1.getì›”ë‚©ì…ê¸ˆ() + car2.getì›”ë‚©ì…ê¸ˆ()   )    );
+		
+		//ì‹¼íƒ€í˜ê°€ ì°¨ì–‘ì´ì•¡ì´ 4000000ìœ¼ë¡œ ìˆ˜ì •ì´ ë˜ì—ˆë‹¤ë©´
+		car1.setì°¨ëŸ‰ì´ì•¡(40000000);
+		System.out.println(car1.getì°¨ëŸ‰ëª…() + "  " + car1.getì°¨ëŸ‰ì´ì•¡() + "   " + car1.getì¸ë„ê¸ˆ() +  "   " + car1.getí• ë¶€ì›ê¸ˆ() + "   " + car1.getìƒí™˜ê¸°ê°„() + "   " + car1.getì›”ë‚©ì…ê¸ˆ());
 		
 	
 	}
