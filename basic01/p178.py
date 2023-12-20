@@ -60,18 +60,18 @@
 #     result = "가"
 # print (f"등급 : {result}")
 # con = input("계속하시겠습니까? (중단 :q, 계속: y)")
-9
-a = int(input("시작 수를 입력해주세요 :"))
-b = int(input("끝수를 입력해주세요 :"))
-x=True
-for i in range (a,b+1) :
-  x = True
-  for j in range(2, a) :
-    if i % j == 0 :
-       x = False
-       break
 
-if x :
-   print(i, end=" ")
+# a = int(input("시작 수를 입력해주세요 :"))
+# b = int(input("끝수를 입력해주세요 :"))
+# x=True
+# for i in range (a,b+1) :
+#   x = True
+#   for j in range(2, a) :
+#     if i % j == 0 :
+#        x = False
+#        break
 
-print(f"{31}은 소수이다")
+# if x :
+#    print(i, end=" ")
+
+# print(f"{31}은 소수이다")

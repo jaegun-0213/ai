@@ -1,6 +1,7 @@
 # 리스트 특징
 # 여러 자료들의 목록형태로 관리하는 자료구조
 # 특징 : 순서가 있다, 수정이 가능하다, 요소의 종류가 달라도 된다.
+# 동일한 요소가 여러개 나올수 있다(중복저장가능)
 list1 = [1,1.1,"문자", [1,9],7,8]
 print(list1[1:5:3])
 
@@ -17,9 +18,6 @@ print(list2)
 list3 = list("abcdef")
 print (list3)
 print(type(list3))
-
-list4 = list()
-print (list4)
 
 coleor = ["빨강", "주황", "노랑", "초록", "파랑", "남색", "보라"]
 print(coleor[0])
