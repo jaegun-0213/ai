@@ -18,19 +18,19 @@ public class ObjectStreamEx {
 		
 		// 멤버클래스의 형태를 스트림으로 만들어서 외부로 보내기
 		try {
-			OutputStream os = new FileOutputStream("D:\\ai\\study\\java_study\\date\\member.dat");
-			BufferedOutputStream bos= new BufferedOutputStream(os);
-			ObjectOutputStream oos = new ObjectOutputStream(bos); // 객체를 스트림으로 만드는 보조스트림
-			
-			 
-			Member m1 = new Member("fall", "단풍이", 10);
-			
-			oos.writeObject(m1);
-			oos.flush();
-			oos.close();
+//			OutputStream os = new FileOutputStream("D:\\ai\\study\\java_study\\date\\member3.dat");
+//			BufferedOutputStream bos= new BufferedOutputStream(os);
+//			ObjectOutputStream oos = new ObjectOutputStream(bos); // 객체를 스트림으로 만드는 보조스트림
+//			
+//			 
+//			Member m1 = new Member("fall", "단풍이", 10);
+//			
+//			oos.writeObject(m1);
+//			oos.flush();
+//			oos.close();
 			
 			// 외부 파일을 읽고
-			InputStream is = new FileInputStream("D:\\ai\\study\\java_study\\date\\member.dat");
+			InputStream is = new FileInputStream("D:\\ai\\study\\java_study\\date\\member3.dat");
 			// 성능(속도)를 향상 시키고
 			BufferedInputStream bis= new BufferedInputStream(is);
 			//스트림을 객체 만들고
@@ -40,7 +40,7 @@ public class ObjectStreamEx {
 			// 출력해보기
 			System.out.println(iM);
 			 
-		} catch (IOException | ClassNotFoundException e) {
+		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
@@ -49,10 +49,13 @@ public class ObjectStreamEx {
 }
 
 class Member implements Serializable{
+	private static final long serialVersionUID = -5413711528933648809L;
+	
 	
 	String id;
 	String name;
 	int age;
+	int point;
 	
 	public Member(String id, String name, int age) {
 		super();
