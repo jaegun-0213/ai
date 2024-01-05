@@ -34,7 +34,7 @@ body {
   color: black;
 }
 
-.leftMainBar div a :hover{
+.leftMainBar div a:hover{
   opacity: 50%;
 }
 

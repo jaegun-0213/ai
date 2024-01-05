@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #aaef78;
+}
+
+.wrap {
+  width: 1200px;
+  margin: 0 auto; /* 가운데 정렬*/
+}
+
+#header {
+  width: 1903px;
+  height: 100px;
+  background-color: #5fcc41;
+}
+
+#nav {
+  width: 950px;
+  height: 100px;
+  background-color: #2fd5e2;
+  float: left;
+}
+
+#nav2 {
+  width: 953px;
+  height: 100px;
+  background-color: #eb0350;
+  float: left;
+}
+
+#aside {
+  width: 300px;
+  height: 600px;
+  background-color: #0ca960;
+  clear: both;
+  float: left;
+}
+
+#section {
+  width: 1303px;
+  height: 600px;
+  background-color: #12767d;
+  float: left;
+}
+
+#aside2 {
+  width: 300px;
+  height: 600px;
+  background-color: #f3ba00;
+  float: left;
+}
+
+#footer {
+  width: 1903px;
+  height: 200px;
+  background-color: #9d7de6;
+  clear: both;
+}
