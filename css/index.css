@@ -1,5 +1,5 @@
 * {
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: "Nanum Gothic", sans-serif;
 }
 html {
   background-size: cover;
@@ -13,7 +13,7 @@ body {
   background-color: rgba(255, 255, 255, 0.8);
   height: 40px;
   width: 100%;
-  box-shadow: 0 0.6px rgb(155,  155, 155);
+  box-shadow: 0 0.6px rgb(155, 155, 155);
   position: fixed;
   top: -1px;
 }
@@ -34,7 +34,7 @@ body {
   color: black;
 }
 
-.leftMainBar div a:hover{
+.leftMainBar div a:hover {
   opacity: 50%;
 }
 
@@ -49,6 +49,73 @@ body {
   color: black;
 }
 
-.rightMainbar div a:hover{
-  opacity:  50%;
+.rightMainbar div a:hover {
+  opacity: 50%;
+}
+
+header {
+  position: relative;
+  border-top: 20px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+header h1 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  padding: 0 0 0 26px;
+}
+
+header h1 a {
+  display: block;
+  width: 100px;
+  height: 70px;
+  background: url(../imge/logo.png) no-repeat center;
+}
+
+.hide {
+  overflow: hidden;
+  display: block;
+  position: absolute;
+  border: 0;
+  width: 1px;
+  height: 1px;
+}
+
+a {
+  text-decoration: none;
+}
+
+header nav ul {
+  text-align: center;
+  font-size: 0px;
+}
+header nav ul li {
+  display: inline-block;
+}
+header nav ul li a {
+  display: block;
+  padding: 30px 50px 15px 60px;
+  line-height: 69px;
+  font-size: 15px;
+  color: #000;
+}
+
+header .utll {
+  position: absolute;
+  right: 30px;
+  top: 45px;
+}
+header .utll a {
+  display: inline-block;
+  font-size: 13px;
+  color: #000;
+}
+
+header .utll button {
+  width: 30px;
+  height: 30px;
+  border: 0px;
+  padding: 0 20px;
+  background: url(../imge/button.png) no-repeat center;
 }
