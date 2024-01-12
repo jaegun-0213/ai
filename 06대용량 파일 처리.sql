@@ -582,6 +582,7 @@ INSERT INTO empTbl VALUES('최정보','나사장','3333');
 INSERT INTO empTbl VALUES('윤차장','최정보','3333-1');
 INSERT INTO empTbl VALUES('이주임','윤차장','3333-1-1');
 
+use sqldb;
 select * from emptbl;
 
 -- 우대리 상관의 연락처
