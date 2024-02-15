@@ -40,12 +40,6 @@ for( i in 1:ncol(x) ){
   cat( i, '열  ', sum( this.na ), '\n')
 }
 
-# result
-1열 0 
-2열 1
-3열 2
-4열 1
-5열 0
 
 ## 행에 있는 것 결측값의 갯수 세기( 1행~5행까지 구하기 )
 nrow(x) # 행의 수 
@@ -54,13 +48,6 @@ for( i in 1:5 ){
   cat( i, '행  ', sum( this.na ), '\n')
 }
 
-
-# result
-1행 2 
-2행 1
-3행 1
-4행 0
-5행 0
 
 ds <- mtcars
 ds[2,3] <- NA; ds[3,1] <- NA; ds[2,4] <- NA; ds[4,3] <- NA;
